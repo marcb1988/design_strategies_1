@@ -1,15 +1,15 @@
 describe "the add_names method" do
     it "gives us Name Stored" do
-      expect(add_name("Marc")).to include {name == "Marc"}
+      expect(add_name("Marc")).to eq "Marc Stored!"
     end
 end
 
 describe "the add_names method" do
   it "gives us Name Stored" do
-    expect(add_name("Susan")).to include {name == "Susan"}
+    expect(add_name("Susan")).to eq "Susan Stored!"
   end
 end
 
 def add_name(name)
-  return {:name => name}
+  "#{name} Stored!"
 end
